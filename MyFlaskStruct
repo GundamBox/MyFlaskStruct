@@ -1,0 +1,10 @@
+[program:MyFlaskStruct]
+user=root 
+directory=/var/www/MyFlaskStruct
+command=/var/www/MyFlaskStruct/boot.sh
+
+autostart=true
+autorestart=true
+
+stderr_logfile=/var/log/MyFlaskStruct.err.log
+stdout_logfile=/var/log/MyFlaskStruct.out.log
